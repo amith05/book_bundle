@@ -1,0 +1,17 @@
+development:
+  adapter: oracle_enhanced
+  database: XE
+  username: book_bundle
+  password: book_bundle
+
+test:
+  adapter: oracle_enhanced
+  database: XE
+  username: book_bundle_test
+  password: book_bundle_test
+
+production:
+  adapter: oracle_enhanced
+  database: XE
+  username: book_bundle
+  password: book_bundle

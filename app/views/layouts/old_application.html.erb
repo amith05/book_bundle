@@ -1,0 +1,1351 @@
+<html class="ie10 touch off-canvas" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>
+         Home page
+      </title>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+      <meta content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes" name="viewport">
+      <meta content="true" name="HandheldFriendly">
+      <meta content="YES" name="apple-touch-fullscreen">
+      <meta content="Default Description" name="description">
+      <meta content="E-commerce" name="keywords">
+      <meta content="INDEX,FOLLOW" name="robots">
+      <link type="image/x-icon" href="#" rel="icon">
+      <link type="image/x-icon" href="#" rel="shortcut icon">
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
+      <script type="text/javascript">
+         //<![CDATA[
+              Mage.Cookies.path = '/';
+              Mage.Cookies.domain = '';
+              //]]>
+
+      </script>
+      <script type="text/javascript">
+         //<![CDATA[
+              optionalZipCountries = ["HK","IE","MO","PA"];
+              //]]>
+
+      </script>
+      <script type="text/javascript">
+         var baseurl = ""
+      </script>
+
+      <script type="text/javascript">
+         var offcanvaseffect = '';
+         ja = jQuery.noConflict();
+         ja(document).ready(function() {
+           var test = new ja.fn.jmbasetheme({
+         ismobile:0,
+               istable:0,
+               productgridimagewidth:150,
+               productgridimageheight:225,
+               productlistimageheight:225,
+               productlistimagewidth:150,
+               productgridnumbercolumn:5,
+               productgridimagewidthtabletportrait:298,
+               productgridimageheighttabletportrait:298,
+               productlistimagewidthtabletportrait:298,
+               productlistimageheighttabletportrait:298,
+               productgridnumbercolumntabletportrait:3,
+               productlistimagewidthmobileportrait:298,
+               productlistimageheightmobileportrait:298,
+               productgridimageheightmobileportrait:298,
+               productgridimagewidthmobileportrait:298,
+               productgridnumbercolumnmobileportrait:1,
+         }
+                                             );
+         }
+                               );
+      </script>
+      <script type="text/javascript">
+         var baseurl = "http://jm-bookshop.demo.joomlart.com/"
+      </script>
+      <script type="text/javascript">
+         options= {
+           quickviewtext: "quickview",
+           quickviewtexttitle: "Product quick view",
+           currenttext: "Product {current} of {total}",
+           previoustext: "previous",
+           nexttext: "next"
+         }
+           jQuery(window).load(function($) {
+         jQuery("ul.products-grid").jmquickview(options);
+               jQuery("div.products-grid").jmquickview(options);
+               jQuery("table.products-grid").jmquickview(options);
+               jQuery("ol.products-list").jmquickview(options);
+         }
+                                );
+      </script>
+      <script type="text/javascript">
+         //<![CDATA[
+         var Translator = new Translate([]);
+         //]]>
+      </script>
+      <script type="text/javascript">
+         //ie10 class
+         var doc = document.documentElement;
+         if(navigator.userAgent.indexOf("MSIE 10.0")){
+           doc.className+=' ie10';
+         }
+         var Baseurl = 'http://jm-bookshop.demo.joomlart.com/';
+      </script>
+
+      <link href="css/settings.css.php?profile=default" rel="stylesheet" type="text/css">
+      <link href="css/default.css.php" rel="stylesheet" type="text/css">
+   </head>
+   <body id="bd" class="cms-page-view cms-home skin-default hoverable">
+      <div id="jm-wrapper">
+      <!-- BEGIN: HEADER -->
+      <div id="jm-header" class="wrap clearfix">
+         <script type="text/javascript">
+            jQuery(window).load(function(){
+              if (jQuery('#jm-mainbody').children().hasClass("col-left")){
+                jQuery("div#jm-mainbody > div").equalHeight();
+              }
+              jQuery(".megacol").not(".last").equalHeight();
+
+            }
+                               )
+         </script>
+         <div class="main">
+            <div class="inner clearfix">
+               <h1 id="logo">
+                  <a href="" style="background-image: url(http://jm-bookshop.demo.joomlart.com/skin/frontend/default/jm_book/images/logo.png);">
+                  Magento Commerce
+                  </a>
+               </h1>
+               <p class="no-display">
+                  <a href="">
+                  <strong>
+                  Skip to Main Content »
+                  </strong>
+                  </a>
+               </p>
+               <div id="mainnav-inner">
+                  <!-- BEGIN: SITE SEARCH -->
+                  <div id="jm-search" class="has-toggle">
+                     <div class="btn-toggle search-toggle">
+                        <i class="icon-search">
+                        </i>
+                     </div>
+                     <div class="inner-toggle">
+                        <form id="search_mini_form" action="http://jm-bookshop.demo.joomlart.com/catalogsearch/result/" method="get">
+                           <div class="form-search">
+                              <label for="search">
+                              Search:
+                              </label>
+                              <input autocomplete="off" id="search" name="q" value="" class="input-text" maxlength="128" type="text">
+                              <button type="submit" title="Search" class="icon-search">
+                              </button>
+                              <div style="display: none;" id="search_autocomplete" class="search-autocomplete">
+                              </div>
+                              <script type="text/javascript">
+                                 //<![CDATA[
+                                 var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search products here');
+                                 searchForm.initAutocomplete('http://jm-bookshop.demo.joomlart.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+                                 //]]>
+                              </script>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- END: SITE SEARCH -->
+                  <!-- BEGIN: NAV -->
+                  <div id="jm-mainnav" class="has-toggle">
+                     <div class="btn-toggle menu-toggle">
+                        <i class="icon-reorder">
+                        &nbsp;
+                        </i>
+                     </div>
+                     <div class="inner-toggle" id="jm-mainnav-inner">
+                        <div class="none jm-megamenu clearfix" id="jm-megamenu">
+                           <ul class="megamenu level0">
+                              <li class="mega first">
+                                 <a href="" class="mega first" id="menu1" title="Home">
+                                 <span class="menu-title">
+                                 Home
+                                 </span>
+                                 </a>
+                              </li>
+                              <li class="mega haschild open">
+                                 <a href="" class="mega haschild" id="menu4" title="Books">
+                                 <span class="menu-title">
+                                 Books
+                                 </span>
+                                 </a>
+                                 <div style="" class="childcontent cols4 ">
+                                    <div class="childcontent-inner-wrap" id="childcontent4">
+                                       <div class="childcontent-inner clearfix" style="width: 565px;">
+                                          <div class="megacol column1 first" style="width: 180px; height: 303px;">
+                                             <ul class="megamenu level1">
+                                                <li class="mega first haschild">
+                                                   <div class="group">
+                                                      <div class="group-title">
+                                                         <a href="" class="mega first haschild" id="menu9" title="Categories">
+                                                         <span class="menu-title">
+                                                         Categories
+                                                         </span>
+                                                         </a>
+                                                      </div>
+                                                      <div class="group-content">
+                                                         <ul class="megamenu level2">
+                                                            <li class="mega first">
+                                                               <a href="" class="mega first" id="menu10" title="Biography">
+                                                               <span class="menu-title">
+                                                               Biography
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu11" title="Business">
+                                                               <span class="menu-title">
+                                                               Business
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="#" class="mega" id="menu23" title="Cookbooks">
+                                                               <span class="menu-title">
+                                                               Cookbooks
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu24" title="Health &amp; Fitness">
+                                                               <span class="menu-title">
+                                                               Health &amp; Fitness
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu25" title="History">
+                                                               <span class="menu-title">
+                                                               History
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu26" title="Mystery">
+                                                               <span class="menu-title">
+                                                               Mystery
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="#" class="mega" id="menu27" title="Religion &amp; Inspiration">
+                                                               <span class="menu-title">
+                                                               Religion &amp; Inspiration
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu28" title="Romance">
+                                                               <span class="menu-title">
+                                                               Romance
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega last">
+                                                               <a href="" class="mega last" id="menu29" title="Fiction/Fantasy">
+                                                               <span class="menu-title">
+                                                               Fiction/Fantasy
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="megacol column2" style="width: 180px; height: 303px;">
+                                             <ul class="megamenu level1">
+                                                <li class="mega first haschild">
+                                                   <div class="group">
+                                                      <div class="group-title">
+                                                         <a href="" class="mega first haschild" id="menu12" title="Collections">
+                                                         <span class="menu-title">
+                                                         Collections
+                                                         </span>
+                                                         </a>
+                                                      </div>
+                                                      <div class="group-content">
+                                                         <ul class="megamenu level2">
+                                                            <li class="mega first">
+                                                               <a href="" class="mega first" id="menu13" title="Science ">
+                                                               <span class="menu-title">
+                                                               Science
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu14" title="Fiction/Fantasy">
+                                                               <span class="menu-title">
+                                                               Fiction/Fantasy
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu15" title="Self-Improvemen">
+                                                               <span class="menu-title">
+                                                               Self-Improvemen
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu16" title="Home &amp; Garden">
+                                                               <span class="menu-title">
+                                                               Home &amp; Garden
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu17" title="Humor Books">
+                                                               <span class="menu-title">
+                                                               Humor Books
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu18" title="Judaism &amp; Judaica">
+                                                               <span class="menu-title">
+                                                               Judaism &amp; Judaica
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega">
+                                                               <a href="" class="mega" id="menu19" title="Music/Film/TV/Theater">
+                                                               <span class="menu-title">
+                                                               Music/Film/TV/Theater
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                            <li class="mega last">
+                                                               <a href="#" class="mega last" id="menu20" title="Parenting &amp; Family">
+                                                               <span class="menu-title">
+                                                               Parenting &amp; Family
+                                                               </span>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="megacol column3" style="width: 205px; height: 303px;">
+                                             <ul class="megamenu level1">
+                                                <li class="mega first">
+                                                   <div class="group">
+                                                      <div class="group-title">
+                                                         <a href="#" class="mega first" id="menu21" title="Week's Biggest Book">
+                                                         <span class="menu-title">
+                                                         Week's Biggest Book
+                                                         </span>
+                                                         </a>
+                                                      </div>
+                                                      <div class="group-content">
+                                                         <div class="product-menu-featured">
+                                                            <div class="jm-product-list latest clearfix">
+                                                               <div class="listing-type-grid category-products">
+                                                                  <div class="products-grid">
+                                                                     <div class="item">
+                                                                        <div class="item-inner">
+                                                                           <p class="product-image">
+                                                                              <a title="Lifestyle design" href="">
+                                                                              <img src="images/1.jpg" alt="Lifestyle design">
+                                                                              </a>
+                                                                           </p>
+                                                                           <div class="product-information">
+                                                                              <h2 class="product-name">
+                                                                                 <a title="Lifestyle design" href="">
+                                                                                 Lifestyle design
+                                                                                 </a>
+                                                                              </h2>
+                                                                              <div class="author">
+                                                                                 Mark Levin
+                                                                              </div>
+                                                                              <div class="ratings">
+                                                                                 <div class="rating-box">
+                                                                                    <div class="rating">
+                                                                                    </div>
+                                                                                 </div>
+                                                                                 <p class="rating-links">
+                                                                                    <a href="">
+                                                                                    0 Review
+                                                                                    </a>
+                                                                                    <span class="separator">
+                                                                                    |
+                                                                                    </span>
+                                                                                    <a href="">
+                                                                                    Add Your Review
+                                                                                    </a>
+                                                                                 </p>
+                                                                              </div>
+                                                                              <div class="price-box">
+                                                                                 <span class="regular-price" id="product-price-16_jmproduct">
+                                                                                 <span class="price">
+                                                                                 $36.00
+                                                                                 </span>
+                                                                                 </span>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="megacol column4 last" style="width: 565px;">
+                                             <ul class="megamenu level1">
+                                                <li class="mega first">
+                                                   <div class="group">
+                                                      <div class="group-content">
+                                                         <div class="menu-adv">
+                                                            <a href="">
+                                                            <img src="http://jm-bookshop.demo.joomlart.com/media/wysiwyg/banner/banner02.jpg" alt="">
+                                                            </a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="mega">
+                                 <a href="" class="mega" id="menu5" title="Nook books">
+                                 <span class="menu-title">
+                                 Nook books
+                                 </span>
+                                 </a>
+                              </li>
+                              <li class="mega">
+                                 <a href="" class="mega" id="menu6" title="Teens">
+                                 <span class="menu-title">
+                                 Teens
+                                 </span>
+                                 </a>
+                              </li>
+                              <li class="mega">
+                                 <a href="" class="mega" id="menu7" title="Kids">
+                                 <span class="menu-title">
+                                 Kids
+                                 </span>
+                                 </a>
+                              </li>
+                              <li class="mega last">
+                                 <a href="" class="mega last" id="menu8" title="Gift Cards">
+                                 <span class="menu-title">
+                                 Gift Cards
+                                 </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END: NAV -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- END: HEADER -->
+      <div class="sidebar-socials">
+         <a class="icon-facebook facebook" href="https://www.facebook.com/joomlart">
+         </a>
+         <a class="icon-twitter twitter" href="https://twitter.com/JoomlArt&lrm;">
+         </a>
+         <a class="icon-google-plus google-plus" href="https://plus.google.com/+JoomlArt">
+         </a>
+         <a class="icon-pinterest pinterest" href="http://www.pinterest.com/joomlart/">
+         </a>
+         <a class="icon-skype skype" href="skype:hung.dv?call">
+         </a>
+      </div>
+      <!-- BEGIN: toolbar -->
+      <div id="jm-head" class="wrap clearfix">
+         <div class="main">
+            <div class="inner clearfix">
+               <ul class="customer-services">
+                  <li>
+                     <em class="icon-phone">
+                     </em>
+                     (012) 345 6789
+                  </li>
+                  <li>
+                     <a href="">
+                     </em>
+                     Shipping &amp; Customer Service
+                     </a>
+                  </li>
+               </ul>
+               <!-- BEGIN: QUICK ACCESS -->
+               <div id="jm-quickaccess" class="quick-access has-toggle">
+                  <div class="btn-toggle quickaccess-toggle">
+                     <i class="icon-user">
+                     </i>
+                     <strong>
+                     My Account
+                     </strong>
+                  </div>
+                  <div style="" class="inner-toggle">
+                     <div style="height: 0px; overflow: hidden;" id="myaccountscroll">
+                        <div style="float: left; height: auto; transition-property: transform; transform-origin: 0px 0px 0px; transform: translate(0px, 0px) translateZ(0px);" class="inner-togglecontent">
+                           <div class="shop-access">
+                              <ul class="links">
+                                 <li class="first">
+                                    <a href="">
+                                    My Account
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="">
+                                    My Wishlist
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="">
+                                    My Cart
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="">
+                                    Checkout
+                                    </a>
+                                 </li>
+                                 <li class=" last">
+                                    <a href="">
+                                    Log In
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- END: QUICK ACCESS -->
+               <!-- BEGIN: QUICK ACCESS -->
+               <div id="jm-setting" class="quick-setting has-toggle">
+                  <div class="btn-toggle setting-toggle">
+                     <i class="icon-globe">
+                     </i>
+                     <strong>
+                     Setting
+                     </strong>
+                  </div>
+                  <div class="inner-toggle">
+                     <div class="form-language">
+                        <label>
+                        Your Language:
+                        </label>
+                        <div class="langs-wrapper">
+                           <a class="lang-flag active" style="background-image: url(http://jm-bookshop.demo.joomlart.com/skin/frontend/default/jm_book/images/flags/default.png)" href="">
+                           English
+                           </a>
+                           <a class="lang-flag " style="background-image: url(http://jm-bookshop.demo.joomlart.com/skin/frontend/default/jm_book/images/flags/french.png)" href="">
+                           French
+                           </a>
+                           <a class="lang-flag " style="background-image: url(http://jm-bookshop.demo.joomlart.com/skin/frontend/default/jm_book/images/flags/german.png)" href="">
+                           German
+                           </a>
+                        </div>
+                     </div>
+                     <div class="colors-setting">
+                        <label for="select-colors">
+                        colors:
+                        </label>
+                        <a class="colors-default" href="">
+                        <span>
+                        green
+                        </span>
+                        </a>
+                        <a class="colors-violet" href="">
+                        <span>
+                        xmas
+                        </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- END: QUICK ACCESS -->
+               <!-- BEGIN: MY CART-->
+               <div id="jm-mycart" class="has-toggle">
+                  <div class="jmajmxloading">
+                     &nbsp;
+                  </div>
+                  <div class="btn-toggle mycart-toggle">
+                     <i class="icon-shopping-cart">
+                     </i>
+                     <span>
+                     Shopping Cart
+                     (
+                     <a class="gotocart" href="">
+                     0 item
+                     </a>
+                     )
+                     </span>
+                  </div>
+                  <div class="inner-toggle">
+                     <div class="block block-cart">
+                        <div class="block-title">
+                           <strong>
+                           <span>
+                           My Cart
+                           </span>
+                           </strong>
+                        </div>
+                        <div class="block-content">
+                           <p class="empty">
+                              You have no items in your shopping cart.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- END: MY CART -->
+            </div>
+         </div>
+         <script type="text/javascript">
+            //<![CDATA[
+            (function($) {
+              $("#jm-head #jm-quickaccess,#jm-setting,#jm-mycart").mouseenter(function (){
+            $(this).children().addClass("active");
+            if($("#jmoverlay").length <= 0){
+                  jmoverlay = $('<div id="jmoverlay" class="jmoverlay"></div>');
+                  jmoverlay.appendTo('#jm-wrapper');
+                  jmoverlay.bind("click",function(){
+                    $("#jm-head #jm-quickaccess,#jm-setting,#jm-mycart").children().removeClass("active");
+                    $(this).remove();
+                  }
+                                )
+            }
+              }
+                                                                             ).mouseleave(function (){
+            $(this).children().removeClass("active");
+            $("#jmoverlay").remove();
+              }
+                                                                                         );
+
+              $("#jm-search .btn-toggle").click(function(){
+            if($(this).siblings(".inner-toggle").hasClass("active")) {
+
+                  $(this).siblings(".inner-toggle").removeClass("active")
+            }
+                else{
+                  $("#jm-head").css("z-index",1);
+                  $(this).siblings(".inner-toggle").addClass("active");
+            }
+
+              }
+                                               )
+                $("#jm-search").mouseleave(function(){
+                  if($(this).children(".inner-toggle").hasClass("active")) {
+            $("#jm-head").css("z-index","");
+            $(this).children(".inner-toggle").removeClass("active")
+                  }
+                }
+                                          );
+
+              $("#jm-quickaccess .btn-toggle").hover(function(e){
+            $("#jm-quickaccess").toggleClass("active");
+            if($("#jm-quickaccess").hasClass("active")){
+                  if(window.myaccountIScrol !== undefined && window.myaccountIScrol !== null){
+                    window.myaccountIScrol.destroy();
+                    window.myaccountIScrol  = null;
+                  }
+                  if($("#myaccountscroll").length){
+                    windowheight = $(window).height()-$("#jm-head").height();
+                    windowheight = windowheight - parseInt($("#jm-quickaccess .inner-toggle").css("padding-top"));
+                    if($("#jm-quickaccess .inner-toggle").height() > windowheight){
+                      $("#myaccountscroll").css("height",windowheight);
+                    }
+                    setTimeout(function(){
+                      window.myaccountIScrol = new iScroll("myaccountscroll",{
+                        vScrollbar: true, useTransform: true,hScrollbar: false}
+                                                          );
+                    }
+                               ,100);
+                  }
+                  else{
+                    quickaccess = $("#jm-quickaccess .inner-toggle").html();
+                    myaccount = $('<div class="inner-togglecontent" />').append($("#jm-quickaccess .inner-toggle").html());
+                    myaccount.css({
+                      float:"left",height:"auto"}
+                                 );
+                    $("#jm-quickaccess .inner-toggle").html("");
+                    myaccountscroll = $('<div id="myaccountscroll" />');
+                    myaccount.appendTo(myaccountscroll);
+
+                    windowheight = $(window).height()-$("#jm-head").height();
+                    windowheight = windowheight - parseInt($("#jm-quickaccess .inner-toggle").css("padding-top"));
+                    myaccountscroll.appendTo($("#jm-quickaccess .inner-toggle"));
+
+                    setTimeout(function(){
+                      if($("#jm-quickaccess .inner-toggle").height() > windowheight){
+                        myaccountscroll.css("height",windowheight);
+                        window.myaccountIScrol = new iScroll("myaccountscroll",{
+                          vScrollbar: true, useTransform: true,hScrollbar: false}
+                                                            );
+                        window.myaccountIScrol.refresh();
+                      }
+
+                    }
+                               ,100);
+
+                  }
+
+
+            }
+
+              }
+                                                    );
+            }
+            )(jQuery);
+            //]]>
+         </script>
+      </div>
+      <!-- END: toolbar -->
+      <!-- TOP SPOTLIGHT -->
+      <div class="jm-position wrap clearfix" id="jm-tops2" >
+         <%= yield %>
+         <div id="jm-bots1" class="jm-spotlight wrap clearfix">
+            <div class="main col2-set clearfix">
+               <div class="inner clearfix">
+                  <div class="block block-shipping">
+                     <div class="inner">
+                        <ul class="list-shipping">
+                           <li class="shipping-item">
+                              <em class="icon-plane">
+                              </em>
+                              <span class="title">
+                              Free Shipping
+                              </span>
+                              <span class="desc">
+                              on orders over $49
+                              </span>
+                           </li>
+                           <li class="exchange-item">
+                              <em class="icon-refresh">
+                              </em>
+                              <span class="title">
+                              1st Exchange Free
+                              </span>
+                              <span class="desc">
+                              on 3 days
+                              </span>
+                           </li>
+                           <li class="support-item">
+                              <em class=" icon-comments">
+                              </em>
+                              <span class="title">
+                              Online support 24/7
+                              </span>
+                              <span class="desc">
+                              123 456 7890
+                              </span>
+                           </li>
+                           <li class="friends-item">
+                              <em class="icon-gift">
+                              </em>
+                              <span class="title">
+                              Tell Friends and get $5
+                              </span>
+                              <span class="desc">
+                              a small gift for you
+                              </span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="block block-subscribe">
+                     <form action="http://jm-bookshop.demo.joomlart.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+                        <div class="block-content">
+                           <div class="subscribe-left">
+                              <div class="block-title">
+                                 <span>
+                                 Sign Up
+                                 </span>
+                                 for news and offers
+                              </div>
+                              <label for="newsletter">
+                              Make sure you dont miss interesting happenings by joining our newsletter program.
+                              </label>
+                           </div>
+                           <div class="input-box">
+                              <input name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" type="text">
+                              <button type="submit" title="Subscribe" class="button">
+                              <span>
+                              <span>
+                              Subscribe
+                              </span>
+                              </span>
+                              </button>
+                           </div>
+                        </div>
+                     </form>
+                     <script type="text/javascript">
+                        //<![CDATA[
+                        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+                        //]]>
+                     </script>
+                  </div>
+                  <div class="block-browser col-1 first">
+                     <div class="col-inner">
+                        <div class="block-title">
+                           <strong>
+                           <span>
+                           Browser
+                           </span>
+                           </strong>
+                        </div>
+                        <div class="block-content">
+                           <ul>
+                              <li>
+                                 <a href="">
+                                 Books
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Gift Cards
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Teens
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Nook Book
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Kids
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Deal
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block-information col-2">
+                     <div class="col-inner">
+                        <div class="block-title">
+                           <strong>
+                           <span>
+                           Information
+                           </span>
+                           </strong>
+                        </div>
+                        <div class="block-content">
+                           <ul>
+                              <li>
+                                 <a href="">
+                                 About Us
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Customer Service
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Privacy Policy
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Search Terms
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Orders and Returns
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Site Map
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block-my-account col-3">
+                     <div class="col-inner">
+                        <div class="block-title">
+                           <strong>
+                           <span>
+                           My account
+                           </span>
+                           </strong>
+                        </div>
+                        <div class="block-content">
+                           <ul>
+                              <li>
+                                 <a href="">
+                                 Sign In
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 View Cart
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 My Wishlist
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Check out
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Track My Orders
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 Contact us
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block-location col-4 last">
+                     <div class="col-inner">
+                        <div class="block-title">
+                           <strong>
+                           <span>
+                           Location
+                           </span>
+                           </strong>
+                        </div>
+                        <div class="block-content">
+                           <p>
+                              Address: 2411 Any Street. Any Town. United Kingdom.
+                           </p>
+                           <p>
+                              Mail to:
+                              <a href="mailto:support@yourstore.com" title="support@yourstore.com">
+                              support@yourstore.com
+                              </a>
+                           </p>
+                           <p>
+                              Phone: +123 456 7890
+                           </p>
+                           <p>
+                              Fax: +123 456 7890
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- //BOTTOM SPOTLIGHT -->
+         <!-- BEGIN: FOOTER -->
+         <div id="jm-footer" class="wrap clearfix">
+            <div class="main">
+               <div class="inner clearfix">
+                  <div class="inner2 clearfix">
+                     <div class="jm-info clearfix">
+                     </div>
+                     <div class="jm-legal">
+                        <script type="text/javascript">
+                           //$('bug_tracking_link').target = "varien_external";
+                        </script>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- END: FOOTER -->
+         <div id="off-canvas-nav">
+            <div class="jm-mainnav">
+               <form id="search_mini_form_offcanvas" action="" method="get">
+                  <div class="form-search">
+                     <label for="search">
+                     Search:
+                     </label>
+                     <input autocomplete="off" id="search_offcanvas" name="q" value="" class="input-text" maxlength="128" type="text">
+                     <button type="submit" title="Search" class="icon-search">
+                     </button>
+                     <div style="display: none;" id="search_autocomplete_offcanvas" class="search-autocomplete">
+                     </div>
+                     <script type="text/javascript">
+                        //<![CDATA[
+                        var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search products here');
+                        searchForm.initAutocomplete('http://jm-bookshop.demo.joomlart.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+                        //]]>
+                     </script>
+                  </div>
+               </form>
+               <ul class="megamenu level0">
+                  <li class="mega first">
+                     <a href="" class="mega first" id="menu1" title="Home">
+                     <span class="menu-title">
+                     Home
+                     </span>
+                     </a>
+                  </li>
+                  <li class="mega haschild">
+                     <a href="" class="mega haschild" id="menu4" title="Books">
+                     <span class="menu-title">
+                     Books
+                     </span>
+                     </a>
+                     <div class="childcontent cols4 ">
+                        <div class="childcontent-inner-wrap" id="childcontent4">
+                           <div class="childcontent-inner clearfix" style="width: 565px;">
+                              <div class="megacol column1 first" style="width: 180px; height: 303px;">
+                                 <ul class="megamenu level1">
+                                    <li class="mega first haschild">
+                                       <div class="group">
+                                          <div class="group-title">
+                                             <a href="" class="mega first haschild" id="menu9" title="Categories">
+                                             <span class="menu-title">
+                                             Categories
+                                             </span>
+                                             </a>
+                                          </div>
+                                          <div class="group-content">
+                                             <ul class="megamenu level2">
+                                                <li class="mega first">
+                                                   <a href="" class="mega first" id="menu10" title="Biography">
+                                                   <span class="menu-title">
+                                                   Biography
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu11" title="Business">
+                                                   <span class="menu-title">
+                                                   Business
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="#" class="mega" id="menu23" title="Cookbooks">
+                                                   <span class="menu-title">
+                                                   Cookbooks
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu24" title="Health &amp; Fitness">
+                                                   <span class="menu-title">
+                                                   Health &amp; Fitness
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu25" title="History">
+                                                   <span class="menu-title">
+                                                   History
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu26" title="Mystery">
+                                                   <span class="menu-title">
+                                                   Mystery
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="#" class="mega" id="menu27" title="Religion &amp; Inspiration">
+                                                   <span class="menu-title">
+                                                   Religion &amp; Inspiration
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu28" title="Romance">
+                                                   <span class="menu-title">
+                                                   Romance
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega last">
+                                                   <a href="" class="mega last" id="menu29" title="Fiction/Fantasy">
+                                                   <span class="menu-title">
+                                                   Fiction/Fantasy
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="megacol column2" style="width: 180px; height: 303px;">
+                                 <ul class="megamenu level1">
+                                    <li class="mega first haschild">
+                                       <div class="group">
+                                          <div class="group-title">
+                                             <a href="" class="mega first haschild" id="menu12" title="Collections">
+                                             <span class="menu-title">
+                                             Collections
+                                             </span>
+                                             </a>
+                                          </div>
+                                          <div class="group-content">
+                                             <ul class="megamenu level2">
+                                                <li class="mega first">
+                                                   <a href="" class="mega first" id="menu13" title="Science ">
+                                                   <span class="menu-title">
+                                                   Science
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu14" title="Fiction/Fantasy">
+                                                   <span class="menu-title">
+                                                   Fiction/Fantasy
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu15" title="Self-Improvemen">
+                                                   <span class="menu-title">
+                                                   Self-Improvemen
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu16" title="Home &amp; Garden">
+                                                   <span class="menu-title">
+                                                   Home &amp; Garden
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu17" title="Humor Books">
+                                                   <span class="menu-title">
+                                                   Humor Books
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="" class="mega" id="menu18" title="Judaism &amp; Judaica">
+                                                   <span class="menu-title">
+                                                   Judaism &amp; Judaica
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega">
+                                                   <a href="http://jm-bookshop.demo.joomlart.com/best-sellers.html" class="mega" id="menu19" title="Music/Film/TV/Theater">
+                                                   <span class="menu-title">
+                                                   Music/Film/TV/Theater
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                                <li class="mega last">
+                                                   <a href="#" class="mega last" id="menu20" title="Parenting &amp; Family">
+                                                   <span class="menu-title">
+                                                   Parenting &amp; Family
+                                                   </span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="megacol column3" style="width: 205px; height: 303px;">
+                                 <ul class="megamenu level1">
+                                    <li class="mega first">
+                                       <div class="group">
+                                          <div class="group-title">
+                                             <a href="#" class="mega first" id="menu21" title="Week's Biggest Book">
+                                             <span class="menu-title">
+                                             Week's Biggest Book
+                                             </span>
+                                             </a>
+                                          </div>
+                                          <div class="group-content">
+                                             <div class="product-menu-featured">
+                                                <div class="jm-product-list latest clearfix">
+                                                   <div class="listing-type-grid category-products">
+                                                      <div class="products-grid">
+                                                         <div class="item">
+                                                            <div class="item-inner">
+                                                               <p class="product-image">
+                                                                  <a title="Lifestyle design" href="">
+                                                                  <img src="http://jm-bookshop.demo.joomlart.com/media/catalog/product/cache/1/thumbnail/100x150/9df78eab33525d08d6e5fb8d27136e95/b/i/bigstock-vector-circle-of-coloring-penc-24993011.jpg" alt="Lifestyle design">
+                                                                  </a>
+                                                               </p>
+                                                               <div class="product-information">
+                                                                  <h2 class="product-name">
+                                                                     <a title="Lifestyle design" href="">
+                                                                     Lifestyle design
+                                                                     </a>
+                                                                  </h2>
+                                                                  <div class="author">
+                                                                     Mark Levin
+                                                                  </div>
+                                                                  <div class="ratings">
+                                                                     <div class="rating-box">
+                                                                        <div class="rating">
+                                                                        </div>
+                                                                     </div>
+                                                                     <p class="rating-links">
+                                                                        <a href="">
+                                                                        0 Review
+                                                                        </a>
+                                                                        <span class="separator">
+                                                                        |
+                                                                        </span>
+                                                                        <a href="">
+                                                                        Add Your Review
+                                                                        </a>
+                                                                     </p>
+                                                                  </div>
+                                                                  <div class="price-box">
+                                                                     <span class="regular-price" id="product-price-16_jmproduct">
+                                                                     <span class="price">
+                                                                     $36.00
+                                                                     </span>
+                                                                     </span>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="megacol column4 last" style="width: 565px;">
+                                 <ul class="megamenu level1">
+                                    <li class="mega first">
+                                       <div class="group">
+                                          <div class="group-content">
+                                             <div class="menu-adv">
+                                                <a href="">
+                                                <img src="http://jm-bookshop.demo.joomlart.com/media/wysiwyg/banner/banner02.jpg" alt="">
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="mega">
+                     <a href="" class="mega" id="menu5" title="Nook books">
+                     <span class="menu-title">
+                     Nook books
+                     </span>
+                     </a>
+                  </li>
+                  <li class="mega">
+                     <a href="" class="mega" id="menu6" title="Teens">
+                     <span class="menu-title">
+                     Teens
+                     </span>
+                     </a>
+                  </li>
+                  <li class="mega">
+                     <a href="" class="mega" id="menu7" title="Kids">
+                     <span class="menu-title">
+                     Kids
+                     </span>
+                     </a>
+                  </li>
+                  <li class="mega last">
+                     <a href="" class="mega last" id="menu8" title="Gift Cards">
+                     <span class="menu-title">
+                     Gift Cards
+                     </span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <a href="#Top" class="btn-btt" title="Back to Top" id="button-btt" style="display: none;">
+      <i class="icon-caret-up">
+      </i>
+      Top
+      </a>
+      <div style="display: none;" id="cboxOverlay">
+      </div>
+      <div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox">
+         <div id="cboxWrapper">
+            <div>
+               <div style="float: left;" id="cboxTopLeft">
+               </div>
+               <div style="float: left;" id="cboxTopCenter">
+               </div>
+               <div style="float: left;" id="cboxTopRight">
+               </div>
+            </div>
+            <div style="clear: left;">
+               <div style="float: left;" id="cboxMiddleLeft">
+               </div>
+               <div style="float: left;" id="cboxContent">
+                  <div style="float: left;" id="cboxTitle">
+                  </div>
+                  <div style="float: left;" id="cboxCurrent">
+                  </div>
+                  <button id="cboxPrevious" type="button" style="border:0;">
+                  </button>
+                  <button id="cboxNext" type="button" style="border:0;">
+                  </button>
+                  <button id="cboxSlideshow">
+                  </button>
+                  <div style="float: left;" id="cboxLoadingOverlay">
+                  </div>
+                  <div style="float: left;" id="cboxLoadingGraphic">
+                  </div>
+               </div>
+               <div style="float: left;" id="cboxMiddleRight">
+               </div>
+            </div>
+            <div style="clear: left;">
+               <div style="float: left;" id="cboxBottomLeft">
+               </div>
+               <div style="float: left;" id="cboxBottomCenter">
+               </div>
+               <div style="float: left;" id="cboxBottomRight">
+               </div>
+            </div>
+         </div>
+         <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;">
+         </div>
+      </div>
+   </body>
+</html>

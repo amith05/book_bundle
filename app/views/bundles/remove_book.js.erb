@@ -1,0 +1,2 @@
+jQuery("#bundle_title_"+"<%=@title_id%>").hide();
+jQuery('#custom_bundle').html("<%= escape_javascript( render(:partial => 'custom_bundle_show', :locals => { :@bundle_titles => @bundle_titles }) ) %>")

@@ -1,0 +1,327 @@
+/* MODE LIST ---*/
+
+
+.jm-product-deals .products-list {
+	margin: 0;
+}
+
+.cms-deals .jm-col-left #jm-main .inner {
+	margin: 0;
+	padding: 0 0 0 30px;
+}
+
+
+.cms-deals .page-title h1,
+.cms-deals .page-title {
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jm-product-deals .products-list .sale-off {
+	color: #FFFFFF;
+	font: 12px/38px 'roboto_slabregular';
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 10px;
+	background: #f0141e;
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+}
+
+.jm-product-deals .products-list .product-shop {
+	width: 53%;
+	margin: 0 15px;
+}
+
+.jm-product-deals .products-list  .product-image{
+	margin: 2px 0 0 -5px;
+}
+
+.jm-product-deals .products-list .product-shop .f-fix {
+	border-right: 1px solid #EEEEEE;
+	padding: 0 15px 0 0;
+	width: auto;
+}
+
+.jm-product-deals .products-list .short-description {
+	line-height: 172%;
+	margin: 20px 0 30px;
+}
+
+.jm-product-deals .products-list .deal-infor-wrap .sale-ends {
+	color: #ff610b;
+	display: block;
+	font-size: 17px;
+}
+
+.jm-product-deals .products-list .product-deal-info {
+	width: 24%;
+	float: right;
+}
+
+.jm-product-deals .products-list .product-deal-info .price-box{
+	border-bottom: 1px dotted #dddddd;
+}
+
+.jm-product-deals .products-list .product-deal-info .price  {
+	font-size: 200%;
+}
+
+.jm-product-deals .products-list .product-deal-info .save-money,
+.jm-product-deals .products-list .product-deal-info .number-product-left,
+.jm-product-deals .products-list .product-deal-info .number-items-sold,
+.jm-product-deals .products-list .product-deal-info .number-product-time{
+	margin: 3px 0;
+}
+
+.jm-product-deals .products-list .product-deal-info label{
+	font-size: 110%;
+	color: #999;
+	width: 80px;
+	display: inline-block;
+}
+.jm-product-deals .products-list .product-deal-info .save-money span,
+.jm-product-deals .products-list .product-deal-info .number-product-left span,
+.jm-product-deals .products-list .product-deal-info .number-items-sold span,
+.jm-product-deals .products-list .product-deal-info .number-product-time span{
+	font-size: 110%;
+	color: #666;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+
+/* MODE GRID ---*/
+.jm-product-deals.grid .listing-type-grid { margin: 0 -40px 0 -20px; }
+
+.jm-product-deals.grid.block { background: none; padding:0 20px; margin-bottom:0; }
+
+.jm-product-deals.grid .products-grid li { background:none;  }
+
+.jm-product-deals .products-grid .product-information {
+	padding:20px;
+	margin:0 20px 0 0;
+	background:#fff;
+	float:left;
+}
+
+.jm-product-deals .products-grid .product-name { font: bold 24px sans-serif;  padding-bottom:15px;  }
+.jm-product-deals .products-grid .ratings { margin-bottom:10px; }
+.jm-product-deals .products-grid .price-box { border-bottom:none; margin:0; }
+.jm-product-deals .products-grid .price-box .special-price .price { font-size: 24px;}
+.jm-product-deals .products-grid .product-image { border:1px solid #ddd; margin: 0; text-align:center; }
+
+.jm-product-deals .products-grid .deals-info { margin:0 0 20px 0; padding:0; display:block; width:99%; border:1px solid #ddd; border-top:none;  float:left }
+.jm-product-deals .products-grid .deals-info li {  border-left:1px solid #ddd; padding:20px 22px; text-align:center; float:left; line-height:24px; }
+.jm-product-deals .products-grid .deals-info li.time-left { border-left:none;}
+.jm-product-deals .products-grid .deals-info li .sale-ends { clear:none; border-bottom: none; margin:0; padding:0; }
+
+.jm-product-deals .products-grid .deals-info li strong.sale-ends,
+.jm-product-deals .products-grid .deals-info li strong.discount,
+.jm-product-deals .products-grid .deals-info li strong.save { color:#ff610b; }
+
+.jm-product-deals .products-grid li.item:hover .jmquickview {
+  display:  block;
+  position: absolute;
+  top: 310px;
+  left: 100px;
+  padding: 10px 0;
+  width: 180px;
+}
+
+/* Right Col ---*/
+.side-col .jm-product-deals.grid.block { background: #fff; padding-top: 20px; }
+
+.side-col .jm-product-deals .products-grid .product-image { border: 0; background: #fff; }
+
+.side-col .jm-product-deals .products-grid li.item:hover .product-image {
+  opacity: 100;
+  filter: alpha(opacity=100);
+}
+
+.side-col .jm-product-deals .products-grid li.item { margin-bottom: 0; }
+
+.side-col .jm-product-deals .products-grid .product-name {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.side-col .jm-product-deals .products-grid .price-box .price { font-size: 12px; }
+
+.side-col .jm-product-deals .products-grid .deals-info { border: 0; margin-bottom: 0; }
+
+.side-col .jm-product-deals .products-grid .deals-info li { padding: 0; border-left: 0; }
+
+.side-col .jm-product-deals .products-grid .product-information { border-bottom: 1px solid #e5e5e5; padding-top: 0; }
+
+/* Home deal ---*/
+.jm-home-product-deals .page-title{
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+}
+
+.jm-home-product-deals .page-title h1{
+	color: #000000;
+    font-size: 115%;
+	float: left;
+	height: auto;
+    line-height: 102%;
+    margin: 0 0 20px;
+    padding: 0 0 0px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.jm-home-product-deals .page-title a{
+	text-decoration: underline;
+	text-transform: none;
+}
+
+.jm-home-product-deals .page-title a:hover{
+	text-decoration: none;
+}
+
+.jm-home-product-deals.grid .listing-type-grid {
+	background: #181818;
+	height: 286px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.jm-home-product-deals.grid.block { background: none; padding:0 0px; margin-bottom:20px; }
+
+.jm-home-product-deals.grid .products-grid{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.jm-home-product-deals.grid .products-grid li.item{
+	background:none;
+	position: relative;
+	float: left;
+	border: 1px solid red;
+	width: auto;
+}
+
+.jm-home-product-deals .products-grid li.item:hover,
+.jm-home-product-deals .products-grid li.item:focus{
+	background: #080808;
+}
+
+.contentdealContainer{
+	float: left;
+    height: auto;
+	opacity: 0;
+    overflow: hidden;
+    padding-left: 0;
+    width: 0;
+}
+
+.contentdealSelected{
+	border-right: 1px solid #333333;
+	width: 275px !important;
+}
+
+.jm-home-product-deals.grid .products-grid li.item:last-child .contentdealSelected{
+	border-right: 0px none;
+}
+
+.contentdealSelected .contentdeal{
+	width: 100% !important;
+}
+
+.jm-home-product-deals.grid .products-grid .inner {
+	color: #999;
+	border-right: 1px solid #333333;
+	padding: 20px 30px !important;
+	float: left;
+	margin: 0px !important;
+	min-height: 225px;
+	position: relative;
+}
+
+
+.jm-home-product-deals.grid .products-grid li.item:last-child .inner,
+.jm-home-product-deals.grid .products-grid .last .inner{
+	border-right: 0px none;
+}
+
+#deal-accordionHandle2 .inner,
+#deal-accordionListItem2 .contentdealSelected {
+	border-right: 0px none !important;
+}
+
+.jm-home-product-deals .products-grid .product-information {
+	background: #080808;
+	float: left;
+	height: 285px !important;
+	padding: 0px 0px 0px 0px;
+	margin:0 0px 0 0px;
+	z-index: 10;
+}
+
+.jm-home-product-deals .products-grid .contentdealSelected .product-information .inner {
+	border-right: 0px none;
+	padding: 30px 0 30px 0px !important;
+}
+
+.jm-home-product-deals .products-grid .product-name { font: normal 154%/120% 'roboto_slabregular'; margin: 0px 0px 15px 0px;}
+.jm-home-product-deals .products-grid .product-name a { color: #f0141e; text-decoration: none;}
+.jm-home-product-deals .products-grid .ratings { margin-bottom:10px; }
+.jm-home-product-deals .products-grid .price-box { border-bottom:none; margin:0;}
+.jm-home-product-deals .products-grid .product-image { background: #181818; cursor: pointer; float: left; margin: 0px; text-align:left; width: 185px; min-height: 285px;}
+
+.jm-home-product-deals .products-grid .product-image :hover,
+.jm-home-product-deals .products-grid .product-image :focus,
+.jm-home-product-deals .products-grid .product-image.product-image-selected{
+	background: #080808;
+}
+
+.jm-home-product-deals .products-grid .product-image.product-image-selected .inner{
+	border-right: 0px none;
+}
+
+.jm-home-product-deals .products-grid .product-image .discount{
+	background: url(assets/ico-discount.png) no-repeat top left;
+	color: #fff;
+	font: normal 12px/38px 'roboto_slabregular';
+	height: 40px;
+	position: absolute;
+	right: 30px;
+	text-align: center;
+	top: 40px;
+	width: 40px;
+}
+
+.jm-home-product-deals .products-grid .product-image .actions{
+	bottom: 0px;
+	position: absolute;
+	right: 0px;
+}
+
+.jm-home-product-deals .products-grid .product-image .actions button.button{
+	font-size: 100%;
+	padding: 0px;
+	width: 40px;
+}
+
+.jm-home-product-deals .products-grid .deals-info { margin:0 0 20px 0; padding:0; display:block; width:100%; float:left }
+.jm-home-product-deals .products-grid .deals-info div { border-right: 1px solid #333333; padding:0px 5px; text-align:center; float:left; line-height:24px;}
+.jm-home-product-deals .products-grid .deals-info div div{ border-right: 0px none; padding: 0px;}
+.jm-home-product-deals .products-grid .deals-info div strong{display: block; font-weight: normal;}
+.jm-home-product-deals .products-grid .deals-info .save-moneys{display: none; }
+.jm-home-product-deals .products-grid .deals-info div strong.sale-ends{font-weight: bold;}
+.jm-home-product-deals .products-grid .deals-info div.old-price{padding: 0px 5px 0px 0px; text-align: left;}
+.jm-home-product-deals .products-grid .deals-info div.old-price .special-price{display: none;}
+.jm-home-product-deals .products-grid .deals-info div.old-price span.price{color: #ddd; font-size: 100%; font-weight: bold;}
+.jm-home-product-deals .products-grid .deals-info div.deal-price .old-price{display: none;}
+.jm-home-product-deals .products-grid .deals-info div.deal-price span.price{color: #f0141e; font-size: 100%;}
+.jm-home-product-deals .products-grid .deals-info div.time-left { border-right: 0px none; padding: 0px 0px 0px 5px; text-align: left;}
+.jm-home-product-deals .products-grid .deals-info div .sale-ends { clear:none; border-bottom: none; margin:0; padding:0; }
+
+.jm-home-product-deals .products-grid .deals-info div strong.sale-ends,
+.jm-home-product-deals .products-grid .deals-info div strong.discount,
+.jm-home-product-deals .products-grid .deals-info div strong.save { color:#ddd; }

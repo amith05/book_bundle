@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @bundle.name
+%p
+  %b Type:
+  = @bundle.type
+%p
+  %b Amount:
+  = @bundle.amount
+%p
+  %b Category:
+  = @bundle.category
+
+= link_to 'Edit', edit_bundle_path(@bundle)
+\|
+= link_to 'Back', bundles_path

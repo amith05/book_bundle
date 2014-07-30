@@ -1,0 +1,26 @@
+.add-to-cart{:style => 'margin-right: 35px;margin-top: -16px;font-size: 15px;float:right'}
+  %button.button.btn-cart{:onclick => "", :title => "", :type => "button"}
+    %span
+      %span
+        %i.icon-shopping-cart>
+        PLACE BUNDLE ORDER
+-@bundle_titles.each do |title|
+  - title_object = Title.find(title)
+  %table{:style => "width:300px;margin-left: 120px;"}
+    %tr
+      %td= link_to render_image(title_object, "120x170" ) , '#'
+      %td
+        .title_details{:style => 'width: 500px;margin-left: 34px;'}
+          %h2{:style => 'font-weight:bold'}
+            = title_object.try(:title)
+          %b{:style => 'font-weight:bold;color:grey'}
+            by
+            %br
+            = title_object.try(:author_name)
+  %br
+
+
+
+
+
+

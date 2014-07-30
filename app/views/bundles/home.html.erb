@@ -1,0 +1,103 @@
+<div id="jm-tops1" class="wrap clearfix">
+   <div class="main col2-set">
+      <div class="inner clearfix">
+        <!-- <div class="block-slideshow col-1">
+            <script type="text/javascript" src="http://jm-bookshop.demo.joomlart.com/skin/frontend/default/jm_book/joomlart/jmslideshow/js/jm.slideshow.js"></script>
+            <<script type="text/javascript">
+               jQuery.noConflict();
+                 jQuery(document).ready(function($){
+                   $('#jm-slide-14042787932091794172370295260').jaslider({
+                   animation: 'drag',            //[slide, fade, slice], slide and fade for old compactible
+
+                   interval: 2000,               //interval - time for between animation
+                   duration: 500,                //duration - time for animation
+
+                   repeat: 1,                //animation repeat or not
+                   autoPlay: 1,              //auto play
+
+                   mainWidth: 540,               //width of main item
+                   mainWidthtablet:448,              //width of main item
+                   mainWidthtabletportrait:718,              //width of main item
+                   mainWidthmobile:0,              //width of main item
+                   mainWidthmobileportrait:0,
+                   mainHeight: 378,              //height of main item
+
+                   rtl: null,                  //rtl
+
+                   thumbType: '',            //false - no thumb, other [number, thumb], thumb will animate
+                   thumbItems: 4,                //number of thumb item will be show
+                   thumbWidth: 60,               //width of thumbnail item
+                   thumbHeight: 60,              //width of thumbnail item
+                   thumbSpaces: [3,3,3,3],         //space between thumbnails
+                   thumbTrigger: 'click',            //thumb trigger event, [click, mouseenter]
+                   thumbDirection: 'horizontal',       //thumb orientation
+                   thumbPosition: 'br',            //[0%, 50%, 100%]
+
+                   showDesc: 'desc',               //show description or not
+                   descTrigger: 'always',            //[always, mouseover, load]
+                   maskAnim: 'fade',           //mask transition style [fade, slide, slide-fade], slide - will use the maskAlign to slide
+                   maskWidth: 300,               //mask - a div over the the main item - used to hold descriptions
+                   maskHeight: 200,              //mask height
+                   maskOpacity: 0.8,             //mask opacity
+                   maskPosition: 'bl',           //[0%, 50%, 100%]
+
+                   controlBox: 0,              //show navigation controller [next, prev, play, playback] - JM does not have a config
+                   controlPosition: 'tr',              //show navigation controller [next, prev, play, playback] - JM does not have a config
+
+                   navButtons: '1',              //main next/prev navigation buttons mode, [false, auto, fillspace]
+
+                   showProgress: 1,              //show the progress bar
+
+                   urls: ['books.html',''],                // [] array of url of main items
+                   targets: false                // [] same as urls, an array of target value such as, '_blank', 'parent', '' - default
+                     });
+                 });
+            </script>
+            <%= render :partial => 'scroll' %>
+        </div> -->
+         <style>
+            .addClassContent{position:absolute; width:18px; height:18px; background:#F0141E; color:#fff; margin:78px 0 0 46px; font-weight:bold; font-size:18px; text-align:center; line-height:16px; }
+            item .item-inner p.product-image:hover,.item-inner p.product-image:focus > .addClassContent{ display:block}
+         </style>
+         <!--- Left Containnor Start -->
+         <div class="block block-top-book col-2">
+            <div class="str">
+               <div class="jm-product-list latest clearfix">
+                  <div class="listing-type-list category-products">
+                     <div class="jm-products-list-title">
+                        <h2>Making my Bundles</h2>
+                     </div>
+                     <div class="products-list" style="float:left; width:218px;">
+                        <div id= "custom_bundle">
+                          <%= render :partial => 'custom_bundle_show' %>
+                        </div>
+                     </div>
+                     <div style=" float:left; background-color:#181818; width:2px;height:381px">
+                        <div style="float:left; height:72%; border-right:solid 1px #676666; margin-top:88px;"></div>
+                     </div>
+                     <style>
+                        .searchBooks{ float:left; background-color:#999999; width:200px; height:25px; padding:0 0 0 5px;}
+                     </style>
+                     <!-- product list Start -->
+                     <div class="products-list"  style="float:right; width:300px; margin:0 0 0px 0; padding:20px 20px 20px;">
+                        <div style=" float:left; width:100%; color:#fff; font-size:14px;">
+                           SEARCH BOOKS
+                        </div>
+                        <%= form_tag book_search_bundles_path, :style=> "float:left; width:100%; color:#fff; font-size:14px; margin-bottom:10px", :id => 'book_search_form', :remote => true do -%>
+                           <%= text_field_tag :search_text, nil, :class => 'searchBooks' %>
+                           &nbsp
+                           <%= link_to '#', :class => 'submit-search' do %>
+                              <img src="assets/search.png" style='width:20px'>
+                           <% end %>
+                        <% end %>
+                        <%= render :partial => 'search_results' %>
+                     </div>
+                     <!-- product list End -->
+                  </div>
+                  <!--- Left Containnor End -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
